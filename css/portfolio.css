@@ -1,0 +1,133 @@
+body {
+      position: relative;
+    text-align: center;
+  }
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    color: #FFF;
+    
+}
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: #F39200;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color:#fff;
+    background-color: #F39200;
+    border-radius: 10px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color:#000;
+    background-color: lemonchiffon;
+    border-radius: 10px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #F39200;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #F39200;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #F39200;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: #000;
+    background-color: #fffacd;
+    border-radius: 10px;
+}
+.navbar-default {
+    background-color: #191919;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:0;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.topPad{
+    margin-top: 75px;
+}
+#section1 {padding-top:100px;height:1000px; background-color: #dcd0c0;}
+#section2 {padding-top:50px;color: #fff; background-color: #DFE2DB;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #558C89;}
+#section4 {padding-top:50px;height:500px;color: #fff; background-color: #DFE2DB;}
+
+
+@media (max-width: 1023px) {
+    .mainPage {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mainPage {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+@media (min-width: 1400px) {
+    .mainPage {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+}
+@media (min-width: 1800px) {
+    .mainPage {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+}
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.img-list li {
+  display: inline-block;
+  height: 200px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 200px;
+    
+}
+
+
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  opacity: 0;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
