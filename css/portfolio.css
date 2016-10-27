@@ -18,7 +18,9 @@ body {
 #act {
     color:#000;
 }
-
+#phoneNo{
+    margin-bottom: 40px;
+}
 
 .topPad{
     margin-top: 75px;
