@@ -1,6 +1,8 @@
 body {
       position: relative;
     text-align: center;
+    background-color: #dcd0c0;
+    color:#fff;
   }
 
 .newNav {
@@ -24,11 +26,13 @@ body {
 
 .topPad{
     margin-top: 75px;
+    margin-bottom: 75px;
 }
-#section1 {padding-top:50px;height:1000px; background-color: #dcd0c0;}
-#section2 {padding-top:50px;color: #fff; background-color: #dcd0c0;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color: #558C89;}
-#section4 {padding-top:50px;height:500px;color: #fff; background-color: #DFE2DB;}
+
+#section1 {padding-top:50px;padding-bottom: 70px; }
+#section2 {padding-top:50px;color: #fff;}
+#section3 {padding-top:50px;color: #fff;}
+#section4 {padding-top:50px;color: #fff;}
 
 
 @media (max-width: 1023px) {
