@@ -2,65 +2,21 @@ body {
       position: relative;
     text-align: center;
   }
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    color: #FFF;
-    
+
+.newNav {
+    padding-top: 60px;
 }
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: #F39200;
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+.newNav a {
+    font-size:18px;
     color: #fff;
-    
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color:#fff;
-    background-color: #F39200;
-    border-radius: 10px;
 }
 
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color:#000;
-    background-color: lemonchiffon;
-    border-radius: 10px;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #F39200;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #F39200;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #F39200;
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: #000;
-    background-color: #fffacd;
-    border-radius: 10px;
-}
-.navbar-default {
-    background-color: #191919;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border:0;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
 
 .topPad{
     margin-top: 75px;
 }
-#section1 {padding-top:100px;height:1000px; background-color: #dcd0c0;}
-#section2 {padding-top:50px;color: #fff; background-color: #DFE2DB;}
+#section1 {padding-top:50px;height:1000px; background-color: #dcd0c0;}
+#section2 {padding-top:50px;color: #fff; background-color: #dcd0c0;}
 #section3 {padding-top:50px;height:500px;color: #fff; background-color: #558C89;}
 #section4 {padding-top:50px;height:500px;color: #fff; background-color: #DFE2DB;}
 
