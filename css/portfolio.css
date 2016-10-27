@@ -5,10 +5,18 @@ body {
 
 .newNav {
     padding-top: 60px;
+    
+    border-bottom: 1px solid #fff;
+
 }
 .newNav a {
     font-size:18px;
     color: #fff;
+    text-decoration: none;
+}
+
+#act {
+    color:#000;
 }
 
 
