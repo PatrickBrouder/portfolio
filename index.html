@@ -46,38 +46,53 @@
       </div>
       </div>
   <h2> Recent Projects</h2>
-  <ul class="img-list">
-  <li>
-    <a id="project1" href="#">
+  <ul class="img-list" id="projectBut">
+  <li data-filter="kinetic">
+    <a href="#project1">
       <img src="images/work1.png"width="200" height="200" />
+      <span class="text-content"><span>Place Name</span></span>
+       
+    </a>
+  </li>
+      <li data-filter="cgi2">
+    <a href="#">
+      <img src="images/work2.png"width="200" height="200" />
       <span class="text-content"><span>Place Name</span></span>
         
     </a>
   </li>
-      <li>
-    <a id="project2" href="#">
-      <img src="images/work2.png"width="200" height="200" />
-      <span class="text-content"><span>Place Name</span></span>
-    </a>
-  </li>
-      <li>
-    <a  id="project3"href="#">
+      <li data-filter="cgi1">
+    <a href="#">
       <img src="images/work3.png"width="200" height="200" />
       <span class="text-content"><span>Place Name</span></span>
+        
     </a>
   </li>
       </ul>
-      <div id="project1Det" class="hidden">
-        Info about video project
-        </div>
-      <div id="project2Det" class="hidden">
-        Ps vita cgi project
-        </div>
-      <div id="project3Det" class="hidden">
-        headset cgi project
-        </div>
-         
+      <div id="projects">
+          <div class="kinetic hidden">
+          <h2>Project1</h2>
+          <p>jj</p>
+          <p>jj</p>
+              <button type="button"  class="btn btn-default hideBut">Hide</button>
+          </div>
+          <div class="cgi2 hidden">
+          <h2>Project2</h2>
+          <p>jj</p>
+          <p>jj</p>
+              <button type="button"  class="btn btn-default hideBut">Hide</button>
+          </div>
+          <div class="cgi1 hidden">
+          <h2>Project3</h2>
+          <p>jj</p>
+          <p>jj</p>
+               <button type="button" class="btn btn-default hideBut">Hide</button>
+          </div>
+          
+      </div>
       <a href="projects.html" class="btn btn-default" role="button">More Projects</a>
+      
+      
 </div>
 
   

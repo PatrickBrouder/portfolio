@@ -1,22 +1,26 @@
 $(document).ready(function() {
 	
-    $('#project1').click(function(e) {
-        $('#project2Det').addClass('hidden');
-        $('#project3Det').addClass('hidden');
-		$('#project1Det').toggleClass('hidden');
-        e.preventDefault();
+    $('#projectBut li').click(function(e) {
+		var catFilter= $(this).attr('data-filter');
+ 		$('div#projects div').each(function() {
+    		if($(this).hasClass(catFilter)) {
+      			$(this).fadeIn('slow').removeClass('hidden');
+    		} else {
+				$(this).fadeOut('normal').addClass('hidden');
+      			
+    		}
+		});
+         //e.preventDefault();
 	});
-    $('#project2').click(function(e) {
-        $('#project1Det').addClass('hidden');
-        $('#project3Det').addClass('hidden');
-		$('#project2Det').toggleClass('hidden');
-        e.preventDefault();
-	});
-    $('#project3').click(function(e) {
-        $('#project2Det').addClass('hidden');
-        $('#project1Det').addClass('hidden');
-		$('#project3Det').toggleClass('hidden');
-        e.preventDefault();
+    $('.hideBut').click(function(e) {
+		
+ 		$('div#projects div').each(function() {
+    		
+				$(this).fadeOut('normal').addClass('hidden');
+      			
+    		
+		});
+         e.preventDefault();
 	});
    
 });
