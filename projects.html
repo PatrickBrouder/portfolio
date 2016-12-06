@@ -17,36 +17,18 @@
       
 
 
-  <div id="section2" class="container-fluid text-center mainPage">
-      <div class="row">
-    <div class="col-sm-2 newNav">
-        <a href="index.html">WELCOME</a>
-      </div>
-          <div class="col-sm-2 newNav">
-        <a id="act" href="projects.html">PROJECTS</a>
-      </div>
-          <div class="col-sm-4 ">
-        <img src="images/logo.png" style="width:100%; height:100%;">
-      </div>
-    <div class="col-sm-2 newNav">
-        <a href="showReel.html">SHOW REEL</a>
-      </div>
-          <div class="col-sm-2 newNav">
-        <a href="contact.html">CONTACT</a>
-      </div>
-      </div>
-      <div class="row topPad">
+    <div id="section2" class="container-fluid text-center mainPage">
     <h1>Projects</h1>
    
      <ul class="img-list" id="projectBut">
-  <li data-filter="kinetic">
+  <li data-filter="kinetic" data-toggle="modal" data-target="#myModal">
     <a href="#projects">
       <img src="images/work1.png"width="200" height="200" />
       <span class="text-content"><span>Kinetic Text</span></span>
        
     </a>
   </li>
-      <li data-filter="cgi2">
+      <li data-filter="cgi2" data-toggle="modal" data-target="#myModal">
     <a href="#projects">
       <img src="images/work2.png"width="200" height="200" />
       <span class="text-content"><span>CGI PS VITA</span></span>
@@ -113,57 +95,90 @@
         
     </a>
   </li>
+         
       </ul>
-          
-      <div id="projects">
+      
+      
+      </div>
+
+
+  </body>
+</html>
+
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div id="projects">
           <div class="kinetic hidden">
           <h2>Kinetic Text</h2>
           <p>For this project I had to take a song and make a kinetic text video for it using after effects.</p>
           <p>The song is Jellyfish - Sebrina, Paste And Plato</p>
+          </div>
+          <div class="videoWrapper kinetic hidden">
               <iframe src="https://player.vimeo.com/video/189818054" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/189818054">kinetictext</a> from <a href="https://vimeo.com/user58562146">Patrick Brouder</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+          </div>
+          <div class="kinetic hidden">
               <button type="button"  class="btn btn-default hideBut">Hide</button>
           </div>
+        
           <div class="cgi2 hidden">
           <h2>CGI Modeled PS Vita</h2>
           <p>Using Maya I had to model a real life object and apply texture mappings to it and produce a render of the model</p>
-          <video width="1080" controls>
-            <source src="video/psvitawireframe.mov" type="video/mp4">
-              </video>
-              <video width="1080" controls>
-            <source src="video/psvitatextured.mov" type="video/mp4">
-              </video>
-                                  
+          </div>
+          <div class="videoWrapper cgi2 hidden">
+          <iframe src="https://player.vimeo.com/video/189820160" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="videoWrapper cgi2 hidden">
+              <iframe src="https://player.vimeo.com/video/189820161" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+           <div class="cgi2 hidden">                       
               <button type="button"  class="btn btn-default hideBut">Hide</button>
           </div>
+          
           <div class="cgi1 hidden">
           <h2>CGI Modeled Headset</h2>
           <p>Using Maya I had to model a real life object and apply texture mappings to it and produce a render of the model</p>
-          <source src="video/headsetwireframe.mov" type="video/mp4">
-              </video>
-              <video width="1080" controls>
-            <source src="video/headsettextured.mov" type="video/mp4">
-              </video>
+          </div>
+          <div class="videoWrapper cgi1 hidden">
+          <iframe src="https://player.vimeo.com/video/189820159" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="videoWrapper cgi1 hidden">
+              <iframe src="https://player.vimeo.com/video/189820157" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="cgi1 hidden">
                <button type="button" class="btn btn-default hideBut">Hide</button>
           </div>
+          
           <div class="penpixel hidden">
           <h2>Pen & Pixel Website</h2>
           <p>In this project I had to make a website for our pen & pixel event that takes place in our college. The site had to have animation, gallerym agllery filter, contact form and other information on the event</p>
           <p>Click <a href="http://patrickbrouder.github.io">here</a> to view th website.</p>
                <button type="button" class="btn btn-default hideBut">Hide</button>
           </div>
+          
           <div class="buttonGen hidden">
           <h2>HTML Button Generator</h2>
           <p>For this project I was asked to make some sort of HTML generator. I chose to make a button generator where you could style a button using sliders and other inputs and  then be able to generate the HTML and CSS for that button</p>
               <p>You can view the button generator here <a href="buttonGen.html">Button Generator</a></p>
                <button type="button" class="btn btn-default hideBut">Hide</button>
           </div>
+          
           <div class="animationvid hidden">
           <h2>Game Level Aniamtion</h2>
           <p>This project was linked with another flash programming project. I had to come up with a level design for a game with enemies, pick ups etc, main character. I thenhad to animate the character through the level using flash.</p>
           <p>View the level<a href="animation/demo_video.html">here</a></p>
                <button type="button" class="btn btn-default hideBut">Hide</button>
           </div>
+          
           <div class="game hidden">
           <h2>FLash Game</h2>
               <p>I had to programe a level where my character moved through it and collected pick ups to increase his score and defeat enemies by trowing a projectile at them. Th level was completed when all the pick ups were collected</p>
@@ -171,36 +186,33 @@
           <p>You can play the game <a href="game/game.html">here</a></p>
                <button type="button" class="btn btn-default hideBut">Hide</button>
           </div>
+          
           <div class="movieposter hidden">
           <h2>Movie Poster</h2>
           <p>For this assignment I had to make a movie poster for a locationin Ireland withan apocalypse theme to it. I chose Cloneml town and got my image for the poster</p>
           <img src="images/movie.png" >
                <button type="button" class="btn btn-default hideBut">Hide</button>
           </div>
+          
           <div class="infograph hidden">
           <h2>Infograph</h2>
           <p>I had to make an infograph for this project. I chose to do an infograph on the the marvel movies that had been released at the time.</p>
           <img src="images/infographic.png" >
                <button type="button" class="btn btn-default hideBut">Hide</button>
           </div>
+          
           <div class="colorize hidden">
           <h2>Colorization</h2>
           <p>This project involved taking an old photo and cleaning and fixing it up, then adding color to it.</p>
            <img src="images/colorization.png" >
                <button type="button" class="btn btn-default hideBut">Hide</button>
-          </div>
-          
+          </div> 
+        
       </div>
-          
-          
-          
-      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
 
-  
 </div>
-
-
-
-
-  </body>
-</html>

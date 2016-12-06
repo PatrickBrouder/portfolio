@@ -1,43 +1,58 @@
 body {
       position: relative;
     text-align: center;
-    background-color: #dcd0c0;
+    
     color:#fff;
   }
-
-.newNav {
-    padding-top: 60px;
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    color: #FFF;
     
-    border-bottom: 1px solid #fff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: #000;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color:#fff;
+    background-color: #F39200;
+}
 
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: #000;
+    background-color: #fff8e7;
 }
-.newNav a {
-    font-size:18px;
-    color: #fff;
-    text-decoration: none;
+.navbar-default {
+    background-color: #ECECEA;
+    border:0;
 }
 
-#act {
-    color:#000;
+.navbar .navbar-collapse {
+    text-align: center;
 }
+
 #phoneNo{
     margin-bottom: 40px;
 }
 
-.topPad{
-    margin-top: 25px;
-    margin-bottom: 75px;
-}
+
 img{
 width: 100%;
 height: 100%;
 
 }
 
-#section1 {padding-top:50px;padding-bottom: 70px; }
-#section2 {padding-top:50px;color: #fff;}
-#section3 {padding-top:50px;color: #fff;}
-#section4 {padding-top:50px;color: #fff;}
+#welcome {padding-top:50px;padding-bottom: 70px; background-color: #4A96AD;}
+#showReel {padding-top:50px;color: #000; background-color: #ECECEA;}
+#proj {color: #000;background-color: #4A96AD;}
+#projects {color: #000;}
+#contactUs {color: #000;background-color: #ECECEA;}
 
 
 @media (max-width: 1023px) {
