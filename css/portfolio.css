@@ -11,16 +11,16 @@ body {
     
 }
 #custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: #000;
+    color: #fff;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: #000;
+    color: #fff;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
     color:#fff;
-    background-color: #F39200;
+    background-color: #f2b632;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
@@ -29,7 +29,7 @@ body {
     background-color: #fff8e7;
 }
 .navbar-default {
-    background-color: #ECECEA;
+    background-color: #E3170A;
     border:0;
 }
 
@@ -48,11 +48,11 @@ height: 100%;
 
 }
 
-#welcome {padding-top:50px;padding-bottom: 70px; background-color: #4A96AD;}
-#showReel {padding-top:50px;color: #000; background-color: #ECECEA;}
-#proj {color: #000;background-color: #4A96AD;}
+#welcome {padding-top:150px;padding-bottom: 70px; background-color: #252839;}
+#showReel {padding-top:50px;padding-bottom: 70px;color: #000; background-color: #E8F7EE;}
+#proj {padding-top:50px;padding-bottom: 70px;color: #fff;background-color: #252839;}
 #projects {color: #000;}
-#contactUs {color: #000;background-color: #ECECEA;}
+#contactUs {padding-top:50px;padding-bottom: 70px;color: #000;background-color: #E8F7EE;}
 
 
 @media (max-width: 1023px) {
