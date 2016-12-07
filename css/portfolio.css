@@ -1,14 +1,12 @@
 body {
-      position: relative;
+    position: relative;
     text-align: center;
-    
-    color:#fff;
-  }
+    color: #fff;
+}
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
     color: #FFF;
-    
 }
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: #fff;
@@ -19,10 +17,9 @@ body {
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color:#fff;
+    color: #fff;
     background-color: #f2b632;
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
     color: #000;
@@ -30,56 +27,68 @@ body {
 }
 .navbar-default {
     background-color: #E3170A;
-    border:0;
+    border: 0;
 }
-
 .navbar .navbar-collapse {
     text-align: center;
 }
-
-#phoneNo{
+#phoneNo {
     margin-bottom: 40px;
 }
-
-
-img{
-width: 100%;
-height: 100%;
-
+img {
+    width: 100%;
+    height: 100%;
 }
-
-#welcome {padding-top:150px;padding-bottom: 70px; background-color: #252839;}
-#showReel {padding-top:50px;padding-bottom: 70px;color: #000; background-color: #E8F7EE;}
-#proj {padding-top:50px;padding-bottom: 70px;color: #fff;background-color: #252839;}
-#projects {color: #000;}
-#contactUs {padding-top:50px;padding-bottom: 70px;color: #000;background-color: #E8F7EE;}
-
+#welcome {
+    padding-top: 150px;
+    padding-bottom: 70px;
+    background-color: #252839;
+}
+#showReel {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    color: #000;
+    background-color: #E8F7EE;
+}
+#proj {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    color: #fff;
+    background-color: #252839;
+}
+#projects {
+    color: #000;
+}
+#contactUs {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    color: #000;
+    background-color: #E8F7EE;
+}
 @media (max-width: 768px) {
     .videoWrapper iframe {
         width: 100%;
         height: 100%;
     }
     ul.img-list li {
-  display: inline-block;
-  height: 100px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 100px;
-    
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 100px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100px;
-  opacity: 0;
-}
+        display: inline-block;
+        height: 100px;
+        margin: 0 1em 1em 0;
+        position: relative;
+        width: 100px;
+    }
+    span.text-content {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        cursor: pointer;
+        display: table;
+        height: 100px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100px;
+        opacity: 0;
+    }
 }
 @media (min-width: 768px) {
     .videoWrapper iframe {
@@ -87,27 +96,24 @@ span.text-content {
         height: 360px;
     }
     ul.img-list li {
-  display: inline-block;
-  height: 200px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 200px;
-  }
-
-
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 200px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 200px;
-  opacity: 0;
-}
+        display: inline-block;
+        height: 200px;
+        margin: 0 1em 1em 0;
+        position: relative;
+        width: 200px;
+    }
+    span.text-content {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        cursor: pointer;
+        display: table;
+        height: 200px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 200px;
+        opacity: 0;
+    }
 }
 @media (max-width: 1023px) {
     .mainPage {
@@ -115,7 +121,6 @@ span.text-content {
         padding-right: 35px;
     }
 }
-
 @media (min-width: 1024px) {
     .mainPage {
         padding-left: 150px;
@@ -134,23 +139,17 @@ span.text-content {
         padding-right: 400px;
     }
 }
-
 ul.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-
-
-
 span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
-
-
 ul.img-list li:hover span.text-content {
-  opacity: 1;
+    opacity: 1;
 }
