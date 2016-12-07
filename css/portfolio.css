@@ -58,6 +58,8 @@ img {
 }
 #projects {
     color: #000;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 #contactUs {
     padding-top: 50px;
