@@ -12,15 +12,6 @@ $(document).ready(function() {
 		});
          //e.preventDefault();
 	});
-    $('.hideBut').click(function(e) {
-		
- 		$('div#projects div').each(function() {
-    		
-				$(this).fadeOut('normal').addClass('hidden');
-      			
-    		
-		});
-         e.preventDefault();
-	});
+    
    
 });
