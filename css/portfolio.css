@@ -54,7 +54,18 @@ height: 100%;
 #projects {color: #000;}
 #contactUs {padding-top:50px;padding-bottom: 70px;color: #000;background-color: #E8F7EE;}
 
-
+@media (max-width: 768px) {
+    .videoWrapper iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (min-width: 769px) {
+    .videoWrapper iframe {
+        width: 640px;
+        height: 360px;
+    }
+}
 @media (max-width: 1023px) {
     .mainPage {
         padding-left: 35px;
@@ -97,10 +108,6 @@ ul.img-list li {
     
 }
 
-video {
-    max-width: 100%;
-    height: auto;
-}
 
 span.text-content span {
   display: table-cell;
