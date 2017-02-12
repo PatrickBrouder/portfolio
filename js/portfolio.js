@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	
-    $('#projectBut li').click(function(e) {
+    $('.rowInfo div').click(function(e) {
 		var catFilter= $(this).attr('data-filter');
- 		$('div#projects div').each(function() {
+ 		$('div.rowDetails div').each(function() {
     		if($(this).hasClass(catFilter)) {
       			$(this).fadeIn('slow').removeClass('hidden');
     		} else {
@@ -10,6 +10,11 @@ $(document).ready(function() {
       			
     		}
 		});
+         //e.preventDefault();
+	});
+    
+    $('.hideBtn').click(function(e) {
+ 		 $('div.rowDetails div').addClass('hidden');
          //e.preventDefault();
 	});
     

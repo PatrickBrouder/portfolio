@@ -5,6 +5,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="js/portfolio.js"></script>
@@ -19,7 +20,8 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span> 
                </button>
-               <a class="navbar-brand" href="index.html" id="navHeader">Patrick Brouder</a>
+               <a class="navbar-brand" href="index.html" id="navHeader"><img src="images/logo2.png"></a>
+                
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                <ul class="nav navbar-nav navbar-right" id="navButtons">
@@ -38,8 +40,9 @@
             </div>
             <div class="col-sm-8">
                <h1>Welcome</h1>
-               <p>About me</p>
-               <p>Abou me</p>
+               <p>Hello, my name is Patrick Brouder and welcome to my website. I’m currently studying creative multimedia in the Clonmel campus of Limerick Institute of Technology, where I am in third year of the course.  </p>
+               <p>My main area of interest in the course is the programming area. I’ve chosen to do the web applications stream in third year. I hope to after finishing the course to start working as a programmer either with app or website development.</p>
+                <p>On my site, you will find a collection of projects that I have completed. Any queries please do not hesitate to contact me using my contact information located below.</p>
             </div>
          </div>
       </div>
@@ -49,80 +52,39 @@
             <iframe src="https://player.vimeo.com/video/190270024"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
          </div>
       </div>
-      <div id="proj" class="container-fluid text-center mainPage">
+      <div id="listOfProjects" class="container-fluid text-center mainPage proj">
          <h1>Projects</h1>
-         <ul class="img-list" id="projectBut">
-            <li data-filter="kinetic" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
+          
+          <div class="row rowInfo">
+            <div class="col-xs-3 col-sm-3" data-filter="kinetic" >
+            <a href="#projects">
                <img src="images/work1.png"width="200" height="200" />
-               <span class="text-content"><span>Kinetic Text</span></span>
+               
                </a>
-            </li>
-            <li data-filter="cgi2" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
+            </div>
+            <div class="col-xs-3 col-sm-3" data-filter="cgi2">
+                <a href="#projects">
                <img src="images/work2.png"width="200" height="200" />
-               <span class="text-content"><span>CGI PS VITA</span></span>
+                
                </a>
-            </li>
-            <li data-filter="cgi1" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
+            </div>
+            <div class="col-xs-3 col-sm-3" data-filter="cgi1" >
+                <a href="#projects">
                <img src="images/work3.png"width="200" height="200" />
-               <span class="text-content"><span>CGI Headset</span></span>
+               
                </a>
-            </li>
-            <li data-filter="penpixel" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
+            </div>
+            <div class="col-xs-3 col-sm-3" data-filter="penpixel" >
+                <a href="#projects">
                <img src="images/penpixel.png"width="200" height="200" />
-               <span class="text-content"><span>Pen & Pixel</span></span>
+               
                </a>
-            </li>
-            <li data-filter="buttonGen" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
-               <img src="images/buttongen.png"width="200" height="200" />
-               <span class="text-content"><span>Button Genorator</span></span>
-               </a>
-            </li>
-            <li data-filter="animationvid" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
-               <img src="images/animation.png"width="200" height="200" />
-               <span class="text-content"><span>Animation Video</span></span>
-               </a>
-            </li>
-            <li data-filter="game" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
-               <img src="images/game.png"width="200" height="200" />
-               <span class="text-content"><span>Flash Game</span></span>
-               </a>
-            </li>
-            <li data-filter="movieposter" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
-               <img src="images/movieposter.png"width="200" height="200" />
-               <span class="text-content"><span>Movie Poster</span></span>
-               </a>
-            </li>
-            <li data-filter="infograph" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
-               <img src="images/info.png"width="200" height="200" />
-               <span class="text-content"><span>Infographic</span></span>
-               </a>
-            </li>
-            <li data-filter="colorize" data-toggle="modal" data-target="#myModal">
-               <a href="#projects">
-               <img src="images/color.png"width="200" height="200" />
-               <span class="text-content"><span>Colorization</span></span>
-               </a>
-            </li>
-         </ul>
-      </div>
-      <div class="modal fade" id="myModal" role="dialog">
-         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modal Header</h4>
-               </div>
-               <div id="projects">
-                  <div class="kinetic hidden">
+            </div>
+          </div>
+          </div>
+              
+              <div id="projects" class="container-fluid text-center mainPage rowDetails">
+              <div class="kinetic hidden">
                      <h2>Kinetic Text</h2>
                      <p>For this project I had to take a song and make a kinetic text video for it using after effects.</p>
                      <p>The song is Jellyfish - Sebrina, Paste And Plato</p>
@@ -130,9 +92,13 @@
                   <div class="videoWrapper kinetic hidden">
                      <iframe src="https://player.vimeo.com/video/189818054"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   </div>
+                  <div class="videoWrapper kinetic hidden">
+                  <button type="button" class="btn btn-primary hideBtn">Hide</button>
+                  </div>
                   <div class="cgi2 hidden">
                      <h2>CGI Modeled PS Vita</h2>
-                     <p>Using Maya I had to model a real life object and apply texture mappings to it and produce a render of the model</p>
+                     <p>Secong CGI project where I had to model a more cmplex object and apply more texture mappings to it and produce a render of the model</p>
+                      <p>I modelled my PS Vita and when textruing it applied some cracks and finger prints to it.</p>
                   </div>
                   <div class="videoWrapper cgi2 hidden">
                      <iframe src="https://player.vimeo.com/video/189820160" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -140,9 +106,13 @@
                   <div class="videoWrapper cgi2 hidden">
                      <iframe src="https://player.vimeo.com/video/189820161"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   </div>
+                  <div class="videoWrapper cgi2 hidden">
+                  <button type="button" class="btn btn-primary hideBtn">Hide</button>
+                  </div>
                   <div class="cgi1 hidden">
                      <h2>CGI Modeled Headset</h2>
-                     <p>Using Maya I had to model a real life object and apply texture mappings to it and produce a render of the model</p>
+                     <p>My first CGI project where I had to model a real life object using Maya</p>
+                      <p>For this i chose my headset</p>
                   </div>
                   <div class="videoWrapper cgi1 hidden">
                      <iframe src="https://player.vimeo.com/video/189820159"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -150,53 +120,132 @@
                   <div class="videoWrapper cgi1 hidden">
                      <iframe src="https://player.vimeo.com/video/189820157"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                   </div>
+                  <div class="videoWrapper cgi1 hidden">
+                  <button type="button" class="btn btn-primary hideBtn">Hide</button>
+                  </div>
                   <div class="penpixel hidden">
                      <h2>Pen & Pixel Website</h2>
                      <p>In this project I had to make a website for our pen & pixel event that takes place in our college. The site had to have animation, gallerym agllery filter, contact form and other information on the event</p>
                      <p>Click <a href="http://patrickbrouder.github.io">here</a> to view th website.</p>
+                      <button type="button" class="btn btn-primary hideBtn">Hide</button>
                   </div>
-                  <div class="buttonGen hidden">
+              </div>
+              
+       <div class="container-fluid text-center mainPage proj">
+              <div class="row rowInfo">
+            <div class="col-xs-3 col-sm-3" data-filter="buttonGen" >
+            <a href="#projects2">
+               <img src="images/buttongen.png"width="200" height="200" />
+               
+               </a>
+            </div>
+            <div class="col-xs-3 col-sm-3" data-filter="animationvid">
+                <a href="#projects2">
+               <img src="images/animation.png"width="200" height="200" />
+               
+               </a>
+            </div>
+            <div class="col-xs-3 col-sm-3" data-filter="game" >
+                 <a href="#projects2">
+               <img src="images/game.png"width="200" height="200" />
+               
+               </a>
+            </div>
+            <div class="col-xs-3 col-sm-3" data-filter="movieposter">
+                <a href="#projects2">
+               <img src="images/movieposter.png"width="200" height="200" />
+               
+               </a>
+            </div>
+          </div>
+       </div>
+              
+              <div id="projects2" class="container-fluid text-center mainPage rowDetails">
+              <div class="buttonGen hidden">
                      <h2>HTML Button Generator</h2>
                      <p>For this project I was asked to make some sort of HTML generator. I chose to make a button generator where you could style a button using sliders and other inputs and  then be able to generate the HTML and CSS for that button</p>
                      <p>You can view the button generator here <a href="buttonGen.html">Button Generator</a></p>
+                  <button type="button" class="btn btn-primary hideBtn">Hide</button>
                   </div>
                   <div class="animationvid hidden">
                      <h2>Game Level Aniamtion</h2>
                      <p>This project was linked with another flash programming project. I had to come up with a level design for a game with enemies, pick ups etc, main character. I thenhad to animate the character through the level using flash.</p>
                      <p>View the level<a href="animation/demo_video.html">here</a></p>
+                      <button type="button" class="btn btn-primary hideBtn">Hide</button>
                   </div>
                   <div class="game hidden">
                      <h2>FLash Game</h2>
                      <p>I had to programe a level where my character moved through it and collected pick ups to increase his score and defeat enemies by trowing a projectile at them. Th level was completed when all the pick ups were collected</p>
                      <p>I also ported the game overto android and added touch control to be able to play it.</p>
                      <p>You can play the game <a href="game/game.html">here</a></p>
+                      <button type="button" class="btn btn-primary hideBtn">Hide</button>
                   </div>
                   <div class="movieposter hidden">
                      <h2>Movie Poster</h2>
-                     <p>For this assignment I had to make a movie poster for a locationin Ireland withan apocalypse theme to it. I chose Cloneml town and got my image for the poster</p>
+                     <p>This project involved making a movie post for a post apocolyptic Ireland. I chose Clonmel as the setting and took a picture of the main street and edited it into the movie poster</p>
                      <img src="images/movie.png" >
+                      <button type="button" class="btn btn-primary hideBtn">Hide</button>
                   </div>
-                  <div class="infograph hidden">
+              </div>
+             
+       <div class="container-fluid text-center mainPage proj">
+               <div class="row rowInfo">
+            <div class="col-xs-3 col-sm-3" data-filter="infograph" >
+            <a href="#projects3">
+               <img src="images/info.png"width="200" height="200" />
+               
+               </a>
+            </div>
+            <div class="col-xs-3 col-sm-3" data-filter="colorize">
+                <a href="#projects3">
+               <img src="images/color.png"width="200" height="200" />
+              
+               </a>
+            </div>
+            <div class="col-xs-3 col-sm-3" data-filter="taskMan">
+                 <a href="#projects3">
+               <img src="images/taskmanager.png" width="200" height="200" />
+              
+               </a>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+            </div>
+          </div>
+       </div>
+              
+              <div id="projects3" class="container-fluid text-center mainPage rowDetails">
+              <div class="infograph hidden">
                      <h2>Infograph</h2>
-                     <p>I had to make an infograph for this project. I chose to do an infograph on the the marvel movies that had been released at the time.</p>
+                     <p>The brief for this assignment was to chose a topic of our own and create an infograph based on information about it. I chose the marvel cinematic universe and tried to keep the colors and layout simple to read.</p>
                      <img src="images/infographic.png" >
+                  <button type="button" class="btn btn-primary hideBtn">Hide</button>
                   </div>
                   <div class="colorize hidden">
                      <h2>Colorization</h2>
-                     <p>This project involved taking an old photo and cleaning and fixing it up, then adding color to it.</p>
+                     <p>The colorisation assignment we had to do involved choosing a picture from a collection of images from
+around Tipperary and repair it and add color to it. Below is the original image and my repaired and colored image.</p>
+                      <img src="images/original.jpg" >
                      <img src="images/colorization.png" >
+                      <button type="button" class="btn btn-primary hideBtn">Hide</button>
                   </div>
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-               </div>
-            </div>
-         </div>
-      </div>
+                  <div class="taskMan hidden">
+                     <h2>Task Manager using JavaScript</h2>
+                     <p>This project was to create a task manager using JavaScript. The task manager would let you add and remove tasks, sor them by priority, date, name and id </p>
+                      <p>Click <a href="task-manager/index.html">here</a> to view th website.</p>
+                      
+                    <a href="#listOfProjects" class="btn btn-primary hideBtn">Hide</a>
+                      <button type="button" class="btn btn-primary hideBtn">Hide</button>
+                  </div>
+              </div>
+          
+      
+               
+      
       <div id="contactUs" class=" container-fluid text-center mainPage">
          <h3>Contact Me</h3>
-         <h4>Email: pabrouder@gmail.com</h4>
-         <h4 id="phoneNo">Phone No: 087 6467614</h4>
+         <h4> <span class="glyphicon glyphicon-envelope"></span> pabrouder@gmail.com</h4>
+         <h4><span class="glyphicon glyphicon-earphone"></span> 087 6467614</h4>
+          <h4><i class="fa fa-github"></i> <a href="https://github.com/PatrickBrouder">PatrickBrouder</a> </h4>
          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='index.html';}"></iframe>
          <form action="https://docs.google.com/forms/d/10HFtyANSzSZd3md8IfmdRAZWpNgP_GaCBgB6FXa9m-s/formResponse" method="post" target="hidden_iframe" class="form-horizontal" onsubmit="submitted=true;" role="form">
             <div class="form-group">
@@ -218,7 +267,7 @@
                </div>
             </div>
             <div class="form-group">
-               <div class="col-sm-offset-2 col-sm-10">
+               <div class="col-sm-offset-1 col-sm-10">
                   <button type="submit" class="btn btn-default">Submit</button>
                </div>
             </div>

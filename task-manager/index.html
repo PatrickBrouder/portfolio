@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+<h1> Task Manager</h1>
+
+<p>
+When entering date please put / between the month day and year.
+Format is month first, then day, then year. MM/DD/YYYY or M/D/YYYY.
+</p>
+
+<a href="#demo" class="btn btn-info" data-toggle="collapse">New Task</a>
+  <div id="demo" class="collapse">
+   <form class="form-inline" role="form">
+ 	<div class="form-group">
+    	<label for="details">Task Description:</label>
+    	<input id="details" type="text" class="form-control">
+  	</div>
+    <div class="form-group">
+    	<label for="selector">Task Priority:</label>
+    	<select class="form-control" id="selector">
+   			<option >1</option>
+   			<option >2</option>
+   			<option >3</option>
+		</select>
+  	</div>
+  	<div class="form-group">
+    	<label for="due">Due Date:</label>
+    	<input type="text" id="due" class="form-control">
+  	</div>
+  	
+     <input type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id="submitButton" value="Submit"/>
+	</form>
+  </div>
+
+   
+   
+   
+   
+<table class="table" >
+  <thead>
+    <tr>
+      <th><button id="idButton" class="btn btn-default">ID</button></th>
+      <th><button id="detailsButton" class="btn btn-default">Details</button></th>
+      <th><button id="priorityButton" class="btn btn-default">Priority</button></th>
+      <th><button id="dateButton" class="btn btn-default">Due Date</button></th>
+      <th>Delete Task</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+  </tbody>
+</table>
+
+</div>
+<script>
+window.onload=setUp;
+var tasks = new Array();
+var taskIdNum = 1;
+
+function setUp(){
+	if(typeof(window.localStorage) != "undefined"){
+		if (localStorage.getItem("allTasks") === null) { 
+			window.localStorage.setItem("allTasks", 0);
+        } 
+         else {
+            tasks=JSON.parse(window.localStorage.getItem("allTasks"));
+			printTable();
+        }
+
+			
+	}
+	document.getElementById('submitButton').onmousedown=function(){
+		var taskDueDate = document.getElementById('due').value;
+		var dateArray = taskDueDate.split("/"); //Splits the date that was inputed by / store into an array, which will be used for making sure the date is valid
+		
+    	if(dateArray[2].length == 4){ //checks if year is in YYYY
+			if(dateArray[0]>12){ //checks month is an invalid month dateArray[0] is the month
+				alert("Invalid date please input MM/DD/YYYY or M/D/YYYY.");
+			}else{
+				var date = dateArray[1]; //puts date = to the day
+				var taskDueDate = new Date(taskDueDate);
+
+				if (taskDueDate.getDate() != date){ //checks if the inputed date is an actual date
+    				alert("Invalid date please input MM/DD/YYYY or M/D/YYYY.");
+				}else{ // if everything checks out and is valid, starts utting stuff into table
+					
+					
+					var taskDetails = document.getElementById('details').value;
+					var priority = document.getElementById('selector').value;
+					var dueDate = document.getElementById('due').value;
+					document.getElementById("details").value = '';
+					document.getElementById("due").value = '';
+					var task = {taskI:taskIdNum, taskInfo:taskDetails, priorityNum:priority, dateDue:dueDate};
+					tasks.push(task);
+		
+					var btn = document.createElement("input");
+					var btnspan = document.createElement("span");
+					btnspan.setAttribute("class","glyphicon glyphicon-trash");	
+					btn.setAttribute("type", "button");
+					btn.setAttribute("class", "btn btn-default");
+					btn.value="delete";	
+					
+					btn.addEventListener('click', deleteRow);
+		
+					var table = document.getElementById("myTable");
+					var tableRows = table.getElementsByTagName("tr");
+					var count = tableRows.length;
+					var row = table.insertRow(count);
+		
+    				var cell1 = row.insertCell(0);
+    				var cell2 = row.insertCell(1);
+					var cell3 = row.insertCell(2);
+					var cell4 = row.insertCell(3);
+					var cell5 = row.insertCell(4);
+					
+    				cell1.innerHTML = taskIdNum;
+    				cell2.innerHTML = taskDetails;
+					cell3.innerHTML = priority;
+					cell4.innerHTML = dueDate;
+					cell5.appendChild(btn);	
+					
+					taskIdNum++;
+					
+					var keyinput = "allTasks";
+					if(typeof(window.localStorage) != "undefined"){
+						window.localStorage.setItem(keyinput, JSON.stringify(tasks));
+					}
+					else
+					{
+						alert("window.localStorage, not defined");
+					}
+				}
+			}
+			
+		}else{
+				alert("enter year in YYYY format");
+		}
+		
+	}
+	
+	
+	
+	document.getElementById('idButton').onmousedown=function(){
+		
+		tasks.sort(idSort);
+		printTable();
+	}
+	document.getElementById('detailsButton').onmousedown=function(){
+		
+		tasks.sort(detailSort);
+		printTable();
+	}
+	document.getElementById('priorityButton').onmousedown=function(){
+		
+		tasks.sort(prioritySort);
+		printTable();
+	}
+	document.getElementById('dateButton').onmousedown=function(){
+		
+		tasks.sort(dateSort);
+		printTable();
+	}
+}
+
+
+function deleteRow(){
+    var i = this.parentNode.parentNode.rowIndex;
+    document.getElementById("myTable").deleteRow(i-1);
+	tasks.splice(i-1,1);
+	var keyinput = "allTasks";
+	if(typeof(window.localStorage) != "undefined"){
+		window.localStorage.setItem(keyinput, JSON.stringify(tasks));
+	}
+	else
+	{
+		alert("window.localStorage, not defined");
+	}
+}
+
+
+
+
+
+function printTable(){
+
+	var table = document.getElementById("myTable");
+	var tableRows = table.getElementsByTagName("tr");
+	var count = tableRows.length;
+	
+	for (var x=count-1; x>-1; x--) {
+   		table.removeChild(tableRows[x]);
+	}
+	
+	for(var i=0; i<tasks.length;i++){
+			var btn = document.createElement("input");	
+			btn.setAttribute("type", "button");
+			btn.setAttribute("class", "btn btn-default");
+			btn.value="delete";	
+			btn.addEventListener('click', deleteRow);
+			
+    		var row = table.insertRow(i);
+			
+    		var cell1 = row.insertCell(0);
+    		var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			var cell4 = row.insertCell(3);
+			var cell5 = row.insertCell(4);
+			
+    		cell1.innerHTML = tasks[i].taskI;
+    		cell2.innerHTML = tasks[i].taskInfo;
+			cell3.innerHTML = tasks[i].priorityNum;
+			cell4.innerHTML = tasks[i].dateDue;
+			cell5.appendChild(btn);
+			
+			var keyinput = "allTasks";
+			if(typeof(window.localStorage) != "undefined"){
+				window.localStorage.setItem(keyinput, JSON.stringify(tasks));
+			}
+			else
+			{
+				alert("window.localStorage, not defined");
+			}
+		}
+}
+
+function idSort(a,b){
+	var A= a.taskI.toLowerCase();
+	var B= b.taskI.toLowerCase();
+	if(A<B){
+		return -1;
+	}
+	if(A>B){
+		return 1;
+	}
+	0
+}
+function detailSort(a,b){
+	var A= a.taskInfo.toLowerCase();
+	var B= b.taskInfo.toLowerCase();
+	if(A<B){
+		return -1;
+	}
+	if(A>B){
+		return 1;
+	}
+	0
+}
+function prioritySort(a,b){
+	return a.priorityNum-b.priorityNum;
+}
+function dateSort(a,b){
+	var c =new Date(a.dateDue) ;
+	var d =new Date(b.dateDue) ;
+	return c-d;
+}
+
+</script>
+</body>
+</html>
