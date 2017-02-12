@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 body {
     position: relative;
     text-align: center;
     color: #fff;
+    font-family: 'Varela Round', sans-serif;
 }
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
     color: #FFF;
+    
 }
 
 .navbar-brand {
@@ -60,7 +63,7 @@ img {
     background-color: #4c5b9b;
 }
 #showReel {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 70px;
     color: #000;
     background-color: #E8F7EE;
