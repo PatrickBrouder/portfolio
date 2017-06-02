@@ -17,6 +17,21 @@ $(document).ready(function() {
  		 $('div.rowDetails div').addClass('hidden');
          //e.preventDefault();
 	});
+     $("#filterButtons1").change(function () {
+        var end = this.value;
+        var firstDropVal = $('#filterButtons1').val();
+        $('ul#filterButtons li.current').removeClass('current');
+        $(this).addClass('current');
+ 		$('ul#projectBut li').each(function() {
+    		if($(this).hasClass(firstDropVal)) {
+      			$(this).fadeIn('slow').removeClass('hidden');
+    		} else {
+				$(this).fadeOut('normal').addClass('hidden');
+      			
+    		}
+		});
+         e.preventDefault();
+    });
     $('#filterButtons li').click(function(e) {
 		var catFilter= $(this).attr('data-filter');
         $('ul#filterButtons li.current').removeClass('current');
