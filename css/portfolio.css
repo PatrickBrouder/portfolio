@@ -68,7 +68,7 @@ img {
     color: #000;
     background-color: #E8F7EE;
 }
-.proj {
+#proj {
     padding-top: 5px;
     padding-bottom: 5px;
     color: #fff;
@@ -162,4 +162,86 @@ ul.img-list {
 
 ul.img-list li:hover {
     opacity: 1;
+}
+
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.img-list li {
+  display: inline-block;
+  height: 200px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 200px;
+    
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  opacity: 0;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+ul#filterButtons {
+  float: left; 
+  width: 100%;
+  list-style: none; 
+
+}
+
+ul#filterButtons li {
+  float: left;
+  padding-right: 5px;
+  padding-left: 5px;
+  display: inline-block; 
+  float: none;
+  border-right: 1px solid #000000;
+  
+  
+}
+
+
+ul#filterButtons li.current a { 
+    color: #000000;
+    font-weight: bold; 
+}
+
+ul#filterButtons li a { 
+    color: darkgray;
+
+}
+
+ul#projectBut { 
+  float: left; 
+  list-style: none; 
+  margin-left: 0; 
+}
+ul#projectBut li { 
+  border: 1px solid darkgrey; 
+  float: left; 
+  padding: 5px;
+  margin: 0 5px 5px 0; 
+  background-color: #E8F7EE;
 }
